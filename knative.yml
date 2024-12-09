@@ -1,0 +1,17 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: spring-jvm
+  namespace: knative-serving
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "0"  # 최소 pod 0으로 설정
+        autoscaling.knative.dev/scaleDownDelay: "0s"  # 즉시 스케일 다운
+    spec:
+      containers:
+        - image: choi5798/spring-jvm:0.0.1-SNAPSHOT
+          name: spring-jvm
+          ports:
+            - containerPort: 8080
