@@ -1,5 +1,5 @@
 # 졸업프로젝트
-이 레포는 JVM 기반의 Spring Boot 애플리케이션 레포입니다
+이 레포는 JVM 기반의 Spring Boot 애플리케이션 레포입니다<br>
 GraalVM 기반의 레포: https://github.com/choi5798/GraduationProjectHelper
 
 ## 실행하는 법
