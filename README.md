@@ -55,3 +55,10 @@ domain-mapping-65f58c79dc-9cw6d           1/1     Running   0          97s
 domainmapping-webhook-cc646465c-jnwbz     1/1     Running   0          97s
 webhook-859796bc7-8n5g2                   1/1     Running   0          96s
 ```
+
+### 4. 서비스 확인하기
+다음 명령어로 현재 실행중인 서비스들의 상태 및 접속 주소를 알 수 있다
+```shell
+kubectl get ksvc -n knative-serving
+```
+해당 주소로 접속한 뒤 `Hello ~~` 문구가 뜬다면 정상적으로 실행됐다고 볼 수 있다 
